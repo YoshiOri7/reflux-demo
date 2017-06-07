@@ -1,0 +1,47 @@
+.styles-overriding-css-example {
+  width: 50% !important;
+  margin: 0 auto !important;
+  border: 2px solid #FF9800 !important;
+  background-color: #ffd699 !important;
+}
+.login-container{
+  height: 100vh;
+  width: 100vw;
+}
+
+
+.drop-down-menu {
+  border: 2px solid #FF9800;
+  display: flex;
+  align-items: flex-end;
+}
+
+.drop-down-override {
+  /*height: 36px  !important;*/
+}
+
+.container {
+  border: 2px solid #FF9800;
+}
+
+
+
+
+
+/* ======================= */
+.add-dataset-optional {
+  display: flex;
+  justify-content: space-between;  
+}
+.add-dataset-optional-group {
+  width: 45%;
+}
+/* ======================= */
+.search-word-container{
+  margin: 50px auto;
+  width: 80%;
+}
+.search-word-flex{
+  display: flex;
+  align-items: center;
+}
