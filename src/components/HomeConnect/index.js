@@ -43,7 +43,7 @@ var HomeConnect = React.createClass({
 
     return (
       <div className="Home">
-        <h3 style={{ color: 'blue' }}>Home</h3>
+        <h3 style={{ color: 'blue' }}>ConnectToStore</h3>
         {errorEl()}
         {messagesEl()}
         <button onClick={HomeConnectActions.click}>Click</button>

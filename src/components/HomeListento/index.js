@@ -9,14 +9,10 @@ var HomeListentoActions = require('../../actions/HomeListentoActions.js');
 var HomeListentoStore = require('../../stores/HomeListentoStore.js');
 
 // createClass
-var HomeConnect = React.createClass({
+var HomeListento = React.createClass({
   mixins: [Reflux.listenTo(HomeListentoStore, 'onHomeStoreChange')],
 
   onHomeStoreChange: function(data) {
-    console.log('-------------------------------');
-    console.log('onHomeStoreChange from Home.js');
-    console.log(data);
-
     if (data.type === 'click') return this.setState({ click: data.click });
 
     if (data.type === 'fetching') return this.setState({ fetching: data.fetching });
@@ -54,7 +50,7 @@ var HomeConnect = React.createClass({
 
     return (
       <div className="Home">
-        <h3 style={{ color: 'blue' }}>Home</h3>
+        <h3 style={{ color: 'blue' }}>ListenToStore</h3>
         {errorEl()}
         {messagesEl()}
         <button onClick={HomeListentoActions.click}>Click</button>
@@ -65,4 +61,4 @@ var HomeConnect = React.createClass({
   }
 });
 
-module.exports = HomeConnect;
+module.exports = HomeListento;
